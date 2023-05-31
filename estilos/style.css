@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300;0,5..1200,400;0,5..1200,500;0,5..1200,600;0,5..1200,700;0,5..1200,800;0,5..1200,900;1,5..1200,300;1,5..1200,400;1,5..1200,500;1,5..1200,600;1,5..1200,700;1,5..1200,800;1,5..1200,900&display=swap');
+:root{
+    
+    --cor-primaria: #e4ca9d;
+    --cor-secundaria: #2b1b00;
+    --cor-terciaria: #E55807;
+    --cor-hover:  #f0f0c0;
+    --cor-cabecalho-rodape:  #e0c390;
+    --fonte-primaria: 'Playfair display', serif;
+    --fonte-secundaria: 'Playfair', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-weight: 700;
+
+}
+.Front-end {
+    color: var(--cor-terciaria)
+}
+
+.nome {
+    color:#025464  
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+    background-color:var(--cor-cabecalho-rodape);
+    border-radius: 2px;
+
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+.botao_favoritos{
+    font-family: var(--fonte-primaria);
+    color: #2b1b00
+}
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+width: 50%;
+display:flex ;
+flex-direction: column;
+gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria) ;
+    font-weight: 800;
+}
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria); 
+    font-weight:  700;  
+    
+}
+.apresentacao__link
+{
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fonte-secundaria); 
+    gap: 32px;
+}
+.apresentacao__links__but {
+
+ display: flex;
+ justify-content: center;
+ gap: 16px;
+ border: 2px outset #E57C23;
+ width: 50%;
+ text-align: center;
+ border-radius: 8px;
+ font-size: 1.5rem;
+ font-weight: 600;
+ padding: 21.5px 0;
+ text-decoration: none;
+ color: var(--cor-terciaria) ;
+ font-family: var(--fonte-primaria);
+ font-weight: 600;
+ 
+}
+
+.apresentacao__link__subtitulo{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.apresentacao__links__but:hover{
+    background-color:var(--cor-hover);
+}
+
+.fotoeulinda{
+    width: 50%;
+   
+}
+.rodape {
+    color: var(--cor-secundaria);
+    background-color:var(--cor-cabecalho-rodape);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.favs{
+    text-decoration: none;
+    color: #025464;
+}
+.filmes_ {
+    color: #025464;
+}
+.letterboxd{
+    font-family: var(--fonte-primaria);
+    text-decoration: dotted;
+     font-weight: 700;
+     color: #025464;
+     
+    }
+
+    .apresentacao__conteudo__titulo__curriculo__Verde{
+        font-size: 2.25rem;
+        font-family: var(--fonte-primaria) ;
+        font-weight: 800;
+        color: #025464;
+    }
+    .apresentacao__conteudo__titulo__curriculo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria) ;
+    font-weight: 800;
+    color: #E55807;
+}
+.apresentacao__conteudo__titulo__aqui
+{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria) ;
+    font-weight: 800;
+   color: #2b1b00;
+}
+.apresentacao__conteudo__texto__cursos{
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria); 
+    font-weight:  700;  
+}
+
+@media (max-width:1220px)
+
+{
+    .cabecalho{
+padding:  10%;
+        
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
